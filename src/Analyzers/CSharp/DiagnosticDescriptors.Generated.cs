@@ -2679,5 +2679,17 @@ namespace Roslynator.CSharp
             helpLinkUri:        DiagnosticIdentifiers.SimplifyConditionalExpression2, 
             customTags:         Array.Empty<string>());
 
+        /// <summary>RCS1246</summary>
+        public static readonly DiagnosticDescriptor UseElementAccess = Factory.Create(
+            id:                 DiagnosticIdentifiers.UseElementAccess, 
+            title:              "Use element access.", 
+            messageFormat:      "Use element access.", 
+            category:           DiagnosticCategories.General, 
+            defaultSeverity:    DiagnosticSeverity.Info, 
+            isEnabledByDefault: true, 
+            description:        null, 
+            helpLinkUri:        DiagnosticIdentifiers.UseElementAccess, 
+            customTags:         Array.Empty<string>());
+
     }
 }

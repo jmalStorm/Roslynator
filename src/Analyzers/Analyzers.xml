@@ -1738,14 +1738,6 @@ catch (Exception ex) // [|Id|]
         <After><![CDATA[bool x = items.Any();]]></After>
       </Sample>
       <Sample>
-        <Before><![CDATA[var x = list.ElementAt(1); // [|Id|]]]></Before>
-        <After><![CDATA[var x = list[1];]]></After>
-      </Sample>
-      <Sample>
-        <Before><![CDATA[var x = list.First(); // [|Id|]]]></Before>
-        <After><![CDATA[var x = list[0];]]></After>
-      </Sample>
-      <Sample>
         <Before><![CDATA[if (enumerable.Count() != 0) // [|Id|]
 {
 }]]></Before>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Analyzers>
+  <Analyzer Identifier="UseElementAccess" IsDevelopment="true">
+    <Id>RCS1246</Id>
+    <Title>Use element access.</Title>
+    <MessageFormat>Use element access.</MessageFormat>
+    <Category>General</Category>
+    <DefaultSeverity>Info</DefaultSeverity>
+    <IsEnabledByDefault>true</IsEnabledByDefault>
+    <SupportsFadeOut>false</SupportsFadeOut>
+    <SupportsFadeOutAnalyzer>false</SupportsFadeOutAnalyzer>
+    <MinLanguageVersion></MinLanguageVersion>
+    <Summary></Summary>
+    <Samples>
+      <Sample>
+        <Before><![CDATA[list.First()]]></Before>
+        <After><![CDATA[list[0]]]></After>
+      </Sample>
+      <Sample>
+        <Before><![CDATA[list.ElementAt(1)]]></Before>
+        <After><![CDATA[list[1]]]></After>
+      </Sample>
+    </Samples>
+    <Remarks></Remarks>
+    <Links>
+      <Link>
+        <Url></Url>
+        <Text></Text>
+      </Link>
+    </Links>
+  </Analyzer>
+</Analyzers>
